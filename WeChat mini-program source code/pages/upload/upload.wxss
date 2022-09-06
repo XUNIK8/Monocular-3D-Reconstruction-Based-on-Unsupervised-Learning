@@ -1,0 +1,41 @@
+page{
+  height:100%;
+  }
+
+.box{
+  display: flex;
+  justify-content: center;  /*水平*/
+}
+
+.search{
+  color:white;
+  position: fixed;
+  bottom: 470rpx;
+  padding: 40rpx;
+  z-index:10;
+}
+
+.new{
+  color:white;
+  position: fixed;
+  bottom: 320rpx;
+  padding: 40rpx;
+  z-index:10;
+}
+
+.search-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  width: 380rpx;
+  color: rgba(250, 242, 242, 0.995);
+  text-align: center;
+  font-size:14px; 
+  border: 1.6px solid rgba(250, 242, 242, 0.995);
+  border-radius: 20rpx;
+}
+
+.loading {
+  color:black
+}

@@ -1,0 +1,22 @@
+<cu-custom bgColor="bg-black.light" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">三维重建</view>
+</cu-custom>
+<view class="title solid-bottom text-xl padding">
+    <text class="  text-brown text-bold text-shadow">{{pictitle}}</text>
+</view>
+<!-- 这里src 改成了 srcShow ！！！！！！！！！！！！-->
+<view  class="button-container">
+  <view>
+    <image style="width: 900px; height: 400px; " bindlongpress="saveImage"  class= "show-image" mode="aspectFit" src="{{srcShow}}" data-url="{{srcShow}}"></image>
+  </view>
+
+</view>
+
+<view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}" >
+  <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol*2}}" >
+    <view class="cuIcon-{{item.icon}} text-{{item.color}}" bindtap="clickflag" data-name='{{item.flag}}'>
+    </view>
+    <text bindtap="clickflag" data-name='{{item.flag}}'>{{item.name}}</text>
+  </view>
+</view>

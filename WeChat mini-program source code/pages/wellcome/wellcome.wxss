@@ -1,0 +1,79 @@
+/* pages/wellcome/wellcome.wxss *//* pages/index/index.wxss */
+page {
+  background: white;
+}
+
+.cu-avatar-round {
+  margin-top: 130rpx;
+}
+  
+
+.show-image {
+  /* margin-top: 50rpx; */
+  margin-bottom: 25rpx;
+  width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.shangchuan {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+image{
+  /* width:10rpx; */
+  height:600rpx;
+}
+
+.container {
+  background: white;
+}
+
+.button-container {
+  background: white;
+}
+
+/**可拖动悬浮按钮样式表**/
+.btn_Suspension{
+  position: fixed;
+  height: 50rpx;
+  width: 50rpx;
+  background-color: rgba(255, 255, 255, 0.755);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  box-shadow: 1px 0px 1px 1px #ede7e7;
+}
+.Suspension_logo{
+  position:absolute;
+  height:100%;
+  width:100%;
+  left:5%;
+  top:3%
+
+}
+.cornorMark{
+  position:absolute;
+  background: rgb(242, 109, 38);
+  border:1px solid rgb(242, 109, 38);
+  border-radius: 100px;
+  width:30rpx;
+  height:30rpx;
+  top:-17rpx;
+  right:3rpx;
+  color:#fff;
+  font-size: 12px;
+  text-align: center;
+}
+.cornorMark text{
+  position:absolute;
+  width:100%;
+  left:0%;
+  text-align: center;
+  top:-1px;
+}

@@ -1,0 +1,24 @@
+<view class="box" style='width:100%;min-height:100%;color:white;background-image:url("https://z3.ax1x.com/2021/06/18/R9SadI.jpg");background-size:100% 100%;'>
+  <view class="search">
+    <!-- <navigator url="../search/search"> -->
+      <view class="search-text" bindtap="gotoShow">
+        <icon class="iconStyle" color="rgba(250, 242, 242, 0.995)" type="search" size="14"></icon>
+        上传图片
+      </view>
+    <!-- </navigator> -->
+  </view>
+  <view class="new">
+    <!-- <navigator url="../index/index"> -->
+      <view class="search-text" bindtap="begin3d">
+        <text class='cuIcon-emoji'></text><text decode="{{true}}">&nbsp;</text>
+        开始重建
+      </view>
+    <!-- </navigator> -->
+      <view class='cu-load load-modal' wx:if="{{loadModal}}">
+      <image src='/images/logoOK.jpg' class='png' mode='aspectFit'></image>
+      <view class="loading">加载中...</view>
+</view>
+  </view>
+</view>
+
+

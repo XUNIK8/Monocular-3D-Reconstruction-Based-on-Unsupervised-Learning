@@ -1,0 +1,18 @@
+<view class="cu-bar bg-black search">
+    <view class="cu-avatar-round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
+    <view class="content"  style="margin-top: 60rpx;">
+      三维重建
+    </view>
+    <view class="action">
+      <text class="cuIcon-more"></text>
+    </view>
+</view>
+
+<!-- 这里src 改成了 srcProcess -->
+<view  class="button-container" bindtap="toindex">
+  <view>
+    <image style="width: 900px; height: 600px; margin-top:50px; " bindlongpress="saveImage" bindtap="clickme" bindload="getpicwh" class= "show-image" mode="aspectFit" src="{{srcProcess}}" data-url="{{srcProcess}}"></image>
+  </view>
+
+
+</view>
